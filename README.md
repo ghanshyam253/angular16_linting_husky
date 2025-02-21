@@ -1,6 +1,15 @@
 # Angular16LintingHusky
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+`npx @angular/cli@16 new angular16_linting_husky`
+
+ng add angular-eslint  or  ng add @angular-eslint/schematics
+`ng add angular-eslint`
+
+
+
+
+
 
 ## Development server
 
