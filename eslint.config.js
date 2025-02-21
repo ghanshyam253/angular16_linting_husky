@@ -12,6 +12,9 @@ module.exports = tseslint.config(
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
     ],
+    plugins: {
+      'local-eslint-rules': require('./local-eslint-rules'),
+    },
     processor: angular.processInlineTemplates,
     rules: {
       '@angular-eslint/directive-selector': [
@@ -43,6 +46,12 @@ module.exports = tseslint.config(
       '@typescript-eslint/class-literal-property-style': 'off',
       '@typescript-eslint/no-inferrable-types': 'off',
 
+      'local-eslint-rules/forbidden-comment-rule': [
+        'warn',
+        { forbiddenTexts: ['forbiddenText1', 'forbiddenText2'] },
+      ],
+      'local-eslint-rules/deprecated-getPaymentsType-rule': 'warn',
+      'local-eslint-rules/explicit-access-modifier': 'error',
     },
   },
   {
@@ -51,6 +60,11 @@ module.exports = tseslint.config(
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
     ],
-    rules: {},
+    plugins: {
+      'local-eslint-rules': require('./local-eslint-rules'),
+    },
+    rules: {
+      'local-eslint-rules/trackby-rule': 'error',
+    },
   },
 );

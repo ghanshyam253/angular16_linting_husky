@@ -1,13 +1,22 @@
 # Angular16LintingHusky
 
+## Project Creation
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 `npx @angular/cli@16 new angular16_linting_husky`
+
+## Add angular-eslint
 
 ng add angular-eslint or ng add @angular-eslint/schematics
 `ng add angular-eslint`
 
 To run the linting process in project using npm, you can use the following command:
 `npm run lint`
+
+- Included built-in rules
+- Added custom linting rules to the Angular app: trackby-rule, forbidden-comment-rule, deprecated-getPaymentsType-rule, and explicit-access-modifier.
+
+## Add prettier
 
 install prettier
 `npm install --save-dev prettier`
@@ -24,9 +33,6 @@ Add a Prettier ignore file: Create a .prettierignore file
 
 Format your code: You can format your code using Prettier by running the following command:
 `npx prettier --write .`
-
-Included built-in rules
-
 
 ## Development server
 
