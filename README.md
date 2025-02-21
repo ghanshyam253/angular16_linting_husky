@@ -6,6 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ng add angular-eslint or ng add @angular-eslint/schematics
 `ng add angular-eslint`
 
+To run the linting process in project using npm, you can use the following command:
+`npm run lint`
+
 install prettier
 `npm install --save-dev prettier`
 
@@ -22,6 +25,7 @@ Add a Prettier ignore file: Create a .prettierignore file
 Format your code: You can format your code using Prettier by running the following command:
 `npx prettier --write .`
 
+Included built-in rules
 
 
 ## Development server

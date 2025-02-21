@@ -30,6 +30,19 @@ module.exports = tseslint.config(
           style: 'kebab-case',
         },
       ],
+      '@angular-eslint/sort-lifecycle-methods': ['error'],
+
+      'consistent-return': 'error',
+      eqeqeq: 'error',
+      'no-self-compare': 'off',
+      'accessor-pairs': 'error',
+      'capitalized-comments': 'off',
+
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/class-literal-property-style': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off',
+
     },
   },
   {
