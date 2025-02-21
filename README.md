@@ -3,11 +3,24 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 `npx @angular/cli@16 new angular16_linting_husky`
 
-ng add angular-eslint  or  ng add @angular-eslint/schematics
+ng add angular-eslint or ng add @angular-eslint/schematics
 `ng add angular-eslint`
 
+install prettier
+`npm install --save-dev prettier`
 
+Create a Prettier configuration file: You can create a .prettierrc file
+`{`
+`  "singleQuote": true,`
+`  "trailingComma": "all"`
+`}`
 
+Add a Prettier ignore file: Create a .prettierignore file
+`node_modules`
+`dist`
+
+Format your code: You can format your code using Prettier by running the following command:
+`npx prettier --write .`
 
 
 
