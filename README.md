@@ -57,6 +57,9 @@ command will execute the linting tasks defined in your lint-staged configuration
 To set up Husky in your project, you can use the following command:
 `npx husky-init && npm install`
 
+Modify ./.husky/pre-commit file and add
+`npx lint-staged`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
