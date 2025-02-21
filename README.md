@@ -14,7 +14,11 @@ To run the linting process in project using npm, you can use the following comma
 `npm run lint`
 
 - Included built-in rules
-- Added custom linting rules to the Angular app: trackby-rule, forbidden-comment-rule, deprecated-getPaymentsType-rule, and explicit-access-modifier.
+- Added custom linting rules to the Angular app: 
+    - trackby-rule 
+    - forbidden-comment-rule 
+    - deprecated-getPaymentsType-rule
+    - explicit-access-modifier
 
 ## Add prettier
 
