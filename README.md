@@ -38,6 +38,25 @@ Add a Prettier ignore file: Create a .prettierignore file
 Format your code: You can format your code using Prettier by running the following command:
 `npx prettier --write .`
 
+
+## Adding husky and lint-staged
+To add Husky and lint-staged to project, you can use the following command:
+`npm install husky lint-staged --save-dev`
+- Package.json changes as below
+    - add `"prepare": "npx husky install"` in "scripts" section
+    - add 
+    ```javascript
+        "lint-staged": {
+        "src/**/*.{html,ts,scss}": "prettier --write",
+        "src/**/*.ts": "eslint"
+        }
+
+command will execute the linting tasks defined in your lint-staged configuration. 
+`npx lint-staged`
+
+To set up Husky in your project, you can use the following command:
+`npx husky-init && npm install`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
